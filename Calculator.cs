@@ -27,6 +27,7 @@ Console.WriteLine("Press M to Multiply");
 //Takes the users choices
 string inputLetter = Console.ReadLine();
 
+//Need to insert the variable in the if/else statement so it can be used. 
 //Calulaotr Buttons backend caps
 int CalculationButton(int userNumber1, int userNumber2, string inputLetter)
 {
@@ -47,6 +48,8 @@ int CalculationButton(int userNumber1, int userNumber2, string inputLetter)
 }
 
 //Calulation to the console using the method created
-Console.WriteLine(CalculationButton(userNumber1,userNumber2,inputLetter));
+Console.WriteLine($"Your value is {CalculationButton(userNumber1, userNumber2, inputLetter)}");
 
-Console.ReadKey();
+Console.WriteLine("Press Any Key to Close");
+
+//Console.ReadKey();
